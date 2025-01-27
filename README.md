@@ -17,6 +17,7 @@ Its used for creating automated tests for Functional, API, Mobile and E2E Testin
 The tests can be run against the agile, pre-production and production environments. 
 
 ## Framework Structure
+```
 ├───Resources                       # This folder contains Resources for the entire ZeroBank
     ├──Common                       # This subfolder contains common Resources for the entire ZeroBank
     ├──FeedbackPage                 # This subfolder contains the Resources for the Feedback page
@@ -28,7 +29,7 @@ The tests can be run against the agile, pre-production and production environmen
     ├──HeaderMenu                   # This subfolder contains tests for the Header Menu
     ├──Homepage                     # This subfolder contains tests for the Homepage
     └──SignIn                       # This subfolder contains tests for the Sign In process
-
+```
 ## Getting Started
 - Download and install Chrome or Firefox browser.
 - Install VSCode (https://code.visualstudio.com/).
