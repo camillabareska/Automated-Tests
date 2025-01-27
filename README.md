@@ -5,21 +5,25 @@ Test automation framework for [ZeroBank.](http://zero.webappsecurity.com/)
 - [Summary](#summary)
 - [Framework Structure](#framework-structure)
 - [Getting Started](#getting-started)
-- [How to Review Test Report](#how-to-review-test-report)
+- [Setup Env Step By Step](#setup-env-step-by-step)
+- [How to write Tests](how-to-write-tests)
+- [How to Run Tests](how-to-run-tests)
+- [How to run Tests by Test Case Name](how-to-run-tests-by-test-case-name)
+- [Observations](observations)
 
 ## Summary
 Robot Framework is a test automation framework based on Python.
 Its used for creating automated tests for Functional, API, Mobile and E2E Testing.
 The tests can be run against the agile, pre-production and production environments. 
 
-## Framework Strucuture
+## Framework Structure
 ├───Resources                       # This folder contains Resources for the entire ZeroBank
     ├──Common                       # This subfolder contains common Resources for the entire ZeroBank
     ├──FeedbackPage                 # This subfolder contains the Resources for the Feedback page
     ├──HeaderMenu                   # This subfolder contains the Resources for the Header Menu
     ├──HomePage                     # This subfolder contains the Resources for the Homepage process
     └──SignIn                       # This subfolder contains the Resources for the Sign In process
-├───Tests                           # This folder contains Tests for the entire Zolo.ca
+├───Tests                           # This folder contains Tests for the entire ZeroBank
     ├──Feedback                     # This subfolder contains tests for the Feedback
     ├──HeaderMenu                   # This subfolder contains tests for the Header Menu
     ├──Homepage                     # This subfolder contains tests for the Homepage
@@ -56,10 +60,10 @@ The tests can be run against the agile, pre-production and production environmen
 - Execute all tests in single robot file in current folder `robot example.robot`
 - Execute all tests in single robot file in subfolder `robot path/to/example.robot`
 
-#### How to run Tests by Test Case Name
+### How to run Tests by Test Case Name
 - Execute test cases clicking in run test button next to the test case name within the desired Test file
 - Execute test cases with name "Example" in any file `robot --test Example .`
 - Execute test cases with name "Example" in specific file `robot --test Example example.robot`
 
-#### Observations
+### Observations
 - The tests are configured to run in headless mode, if you want to enable their display, go to the Keywords.resource file and comment `#` the `browser=headlessfirefox`
